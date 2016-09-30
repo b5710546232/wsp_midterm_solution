@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1 align="center">Login</h1>
+<div align="center">
+    <form action="{% url 'login:login_user' %}" method="post">
+        {% csrf_token %}
+        <div>username : <input type="text" name="username"></div>
+        <div>password : <input type="password" name="password"></div>
+        <br>
+        <button>Login</button>
+    </form>
+
+    <br><br>
+    <div>
+        Want to register?
+        <br>
+        <a href="{% url 'login:register_view' %}">
+            Go to register!
+        </a>
+    </div>
+</div>
+</body>
+</html>

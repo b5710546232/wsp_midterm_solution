@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert</title>
+</head>
+<body>
+<h1>Insert</h1>
+<form class="form-group" action="{% url 'bookstore:insert_book' %}" method="post">
+    {% csrf_token %}
+    <div>Bookid : <input type="text" name="book_id"></div>
+    <div>ISBN : <input type="text"name="isbn"></div>
+    <div>Book name : <input type="text" name="book_name"></div>
+    <div>Price : <input type="text "name="price"></div>
+    <div>Author : <input type="text"name="author"></div>
+    <button>insert</button>
+
+</form>
+</body>
+</html>
