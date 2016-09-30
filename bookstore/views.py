@@ -46,7 +46,7 @@ def index(request):
                 <td><input type = "type" value = '''+row.Price+''' name="price"></td>
                 <td><input type = "type" value = '''+row.Author+''' name="author"></td>
                 <td><input type = "submit" value =update></td>
-                <td><a href =delete/?id='''+str(row.Book_id)+'''"><button>delete</button></a></td>
+                <td><button><a href =delete/?id='''+str(row.Book_id)+'''">delete</a></button></td>
         </tr>
         </form>
                 '''
